@@ -36,9 +36,10 @@ namespace ASP_MVC.Controllers
 
             int pageNumber = (page ?? 1);
 
-            var categoryList = _unitOfWork.CategoryRepository.GetAll().ToPagedList(pageNumber, pageSize);
-
-            categoryList.OrderByDescending(i => i.DisplayOrder);
+            IEnumerable<Category> categoryList = _unitOfWork.CategoryRepository.GetEntities(
+                null,
+                q => q.OrderByDescending(i => i.DisplayOrder)
+            );
 
             return View(categoryList);
         }       
