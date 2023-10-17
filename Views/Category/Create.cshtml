@@ -1,0 +1,44 @@
+﻿@model ASP_MVC.Models.Category;
+
+
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<partial name="_Notification" />
+
+<form method="post">
+    <div class="p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-info"><i class="fa-solid fa-plus"> &nbsp;</i>Create Category</h2>
+            <hr/>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="Name" class="form-control" placeholder="Name">
+            <label asp-for="Name" class="form-label"></label>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input asp-for="DisplayOrder" class="form-control" placeholder="Display">
+            <label asp-for="DisplayOrder" class="form-label"></label>
+            <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary" style="width:150px;">Create</button>
+
+        <a asp-controller="Category" asp-action="Index" class="btn btn-dark" style="width: 150px;">
+            Back To List
+        </a>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
