@@ -281,6 +281,8 @@ C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC-master\obj\Debug\net6.0\ASP-MVC.genru
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC-master\obj\Debug\net6.0\ref\ASP-MVC.dll
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\appsettings.json
+C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\package-lock.json
+C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\package.json
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\ASP-MVC.staticwebassets.runtime.json
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\ASP-MVC.exe
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\ASP-MVC.deps.json
@@ -560,5 +562,3 @@ C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\obj\Debug\net6.0\refint\ASP-MVC.dll
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\obj\Debug\net6.0\ASP-MVC.pdb
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\obj\Debug\net6.0\ASP-MVC.genruntimeconfig.cache
 C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\obj\Debug\net6.0\ref\ASP-MVC.dll
-C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\package-lock.json
-C:\Users\hp\Desktop\ASP-MVC-master\ASP-MVC\bin\Debug\net6.0\package.json

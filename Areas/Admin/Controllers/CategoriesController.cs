@@ -12,7 +12,7 @@ using ASP_MVC.Dao;
 namespace ASP_MVC.Controllers
 {
     [Area("Admin")]
-    public class CategoryController : Controller
+    public class CategoriesController : Controller
     {
         // private readonly ICategoryRepository _categoryRepository;
 
@@ -21,7 +21,7 @@ namespace ASP_MVC.Controllers
 
         //private readonly ILogger<CategoryController> _logger;
         
-        public CategoryController(IUnitOfWork unitOfWork)
+        public CategoriesController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }

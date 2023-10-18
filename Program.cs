@@ -20,6 +20,7 @@ namespace ASP_MVC
             ));
 
 
+           builder.Services.AddScoped<IProductRepository, ProductRepository>();
            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
