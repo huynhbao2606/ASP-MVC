@@ -7,5 +7,7 @@ namespace ASP_MVC.Dao
     {
         void Save();
         GenericRepository<Category> CategoryRepository { get; }
+        GenericRepository<CoverType> CoverTypeRepository { get; }
+        GenericRepository<Product> ProductRepository { get; }
     }
 }

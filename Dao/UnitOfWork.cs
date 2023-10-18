@@ -8,6 +8,8 @@ namespace ASP_MVC.Dao
     {
         private readonly ApplicationDbContext _context;
         private GenericRepository<Category> _categoryRepository;
+        private GenericRepository<CoverType> _coverTypeRepository;
+        private GenericRepository<Product> _productRepository;
 
         public UnitOfWork(ApplicationDbContext dbContext)
         {
@@ -25,6 +27,33 @@ namespace ASP_MVC.Dao
                 }
 
                 return _categoryRepository;
+            }
+        }
+
+        GenericRepository<CoverType> IUnitOfWork.CoverTypeRepository
+        {
+            get
+            {
+                if (_coverTypeRepository == null)
+                {
+                    this._coverTypeRepository = new GenericRepository<CoverType>(_context);
+                }
+
+                return _coverTypeRepository;
+            }
+        }
+
+
+        GenericRepository<Product> IUnitOfWork.ProductRepository
+        {
+            get
+            {
+                if (_productRepository == null)
+                {
+                    this._productRepository = new GenericRepository<Product>(_context);
+                }
+
+                return _productRepository;
             }
         }
 
