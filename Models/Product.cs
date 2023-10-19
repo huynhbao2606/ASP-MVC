@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace ASP_MVC.Models
 {
@@ -27,11 +28,14 @@ namespace ASP_MVC.Models
 
         public string ImageUrl { get; set; }
 
+        [DisplayName("Category")]
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
 
+        [DisplayName("CoverType")]
         public int CoverTypeId { get; set; }
+        [ForeignKey("CoverTypeId")]
         public CoverType CoverType { get; set; }
     }
 }

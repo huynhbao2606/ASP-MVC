@@ -1,4 +1,4 @@
-using ASP_MVC.Dao;
+using ASP_MVC.Dao.IRepository;
 using ASP_MVC.Data;
 using ASP_MVC.Models;
 
@@ -7,9 +7,9 @@ namespace ASP_MVC.Dao
     public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _context;
-        private GenericRepository<Category> _categoryRepository;
-        private GenericRepository<CoverType> _coverTypeRepository;
-        private GenericRepository<Product> _productRepository;
+        private IGenericRepository<Category> _categoryRepository;
+        private IGenericRepository<CoverType> _coverTypeRepository;
+        private IGenericRepository<Product> _productRepository;
 
         public UnitOfWork(ApplicationDbContext dbContext)
         {
@@ -17,7 +17,7 @@ namespace ASP_MVC.Dao
         }
 
 
-        GenericRepository<Category> IUnitOfWork.CategoryRepository
+        IGenericRepository<Category> IUnitOfWork.CategoryRepository
         {
             get
             {
@@ -30,7 +30,7 @@ namespace ASP_MVC.Dao
             }
         }
 
-        GenericRepository<CoverType> IUnitOfWork.CoverTypeRepository
+        IGenericRepository<CoverType> IUnitOfWork.CoverTypeRepository
         {
             get
             {
@@ -44,7 +44,7 @@ namespace ASP_MVC.Dao
         }
 
 
-        GenericRepository<Product> IUnitOfWork.ProductRepository
+        IGenericRepository<Product> IUnitOfWork.ProductRepository
         {
             get
             {

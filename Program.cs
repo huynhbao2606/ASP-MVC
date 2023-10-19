@@ -1,5 +1,7 @@
 using ASP_MVC.Dao;
+using ASP_MVC.Dao.IRepository;
 using ASP_MVC.Data;
+using ASP_MVC.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 
@@ -20,9 +22,10 @@ namespace ASP_MVC
             ));
 
 
-           builder.Services.AddScoped<IProductRepository, ProductRepository>();
-           builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-           builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
+            builder.Services.AddScoped<IGenericRepository<Product>, GenericRepository<Product>>();
+            builder.Services.AddScoped<IGenericRepository<CoverType>, GenericRepository<CoverType>>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 

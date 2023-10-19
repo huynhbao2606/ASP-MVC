@@ -1,11 +1,12 @@
 using System;
 using System.Linq.Expressions;
+using ASP_MVC.Dao.IRepository;
 using ASP_MVC.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace ASP_MVC.Dao
 {
-	public class GenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
 	{
 		private readonly ApplicationDbContext _context;
 		private DbSet<T> contextSet;
@@ -27,7 +28,7 @@ namespace ASP_MVC.Dao
 			_context.Entry(entity).State = EntityState.Modified;
 		}
 
-		public T GetEntityById(object id)
+		public T GetEntityById(int? id)
 		{
 			return contextSet.Find(id);
 		}
@@ -66,6 +67,10 @@ namespace ASP_MVC.Dao
             }
 
             return query.ToList();
+        }
+        public void Save()
+        {
+            _context.SaveChanges();
         }
     }
 }

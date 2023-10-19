@@ -7,21 +7,22 @@ using Microsoft.EntityFrameworkCore;
 using ASP_MVC.Data;
 using ASP_MVC.Models;
 using X.PagedList;
-using ASP_MVC.Dao;
+using ASP_MVC.Dao.IRepository;
 
 namespace ASP_MVC.Controllers
 {
     [Area("Admin")]
-    public class CategoriesController : Controller
+    public class CategoryController : Controller
     {
         // private readonly ICategoryRepository _categoryRepository;
 
 
         private readonly IUnitOfWork _unitOfWork;
+      
 
         //private readonly ILogger<CategoryController> _logger;
         
-        public CategoriesController(IUnitOfWork unitOfWork)
+        public CategoryController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
@@ -73,7 +74,7 @@ namespace ASP_MVC.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create([Bind("Id,Name,DisplayOrder,CreatedDateTime")] Category category)
         {
-
+            
             /// validate
             bool checkCategoryNameExist = _unitOfWork.CategoryRepository
                 .GetEntities(i => i.Name == category.Name && i.Id != category.Id, null).Any();

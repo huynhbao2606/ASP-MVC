@@ -14,34 +14,34 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                Description
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ISBN)
+                ISBN
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Author)
+                Author
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                Price
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price50)
+                Price 50
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price100)
+                Price 100
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ImageUrl)
+                Image
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Category)
+                Category
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CoverType)
+                CoverType
             </th>
             <th></th>
         </tr>
@@ -50,34 +50,34 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
+                @item.Title
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
+                    @item.Description
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ISBN)
+                    @item.ISBN
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Author)
+                    @item.Author
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price)
+                    @item.Price
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price50)
+                    @item.Price50
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Price100)
+                    @item.Price100
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ImageUrl)
+                    @item.ImageUrl
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.Name)
+                    @item.Category.Name
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CoverType.Name)
+                    @item.CoverType.Name
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
