@@ -1,4 +1,7 @@
-﻿@model IEnumerable<ASP_MVC.Models.Product>
+﻿@model X.PagedList.IPagedList<ASP_MVC.Models.Product>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
 
 @{
     ViewData["Title"] = "Index";
@@ -70,9 +73,7 @@
             <td>
                     @item.Price100
             </td>
-            <td>
-                    @item.ImageUrl
-            </td>
+           
             <td>
                     @item.Category.Name
             </td>

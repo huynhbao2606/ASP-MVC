@@ -10,6 +10,8 @@ using ASP_MVC.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ASP_MVC.Dao.IRepository;
 using X.PagedList;
+using ASP_MVC.Dao;
+using System.Collections;
 
 namespace ASP_MVC.Areas.Admin.Controllers
 {
@@ -27,15 +29,16 @@ namespace ASP_MVC.Areas.Admin.Controllers
         public  IActionResult Index(int? page)
         {
             if (page == null) page = 1;
+
             int pageSize = 7;
 
 
             int pageNumber = (page ?? 1);
 
-            var productList = _unitOfWork.ProductRepository.GetAll().OrderBy(i => i.Id).ToPagedList(pageNumber, pageSize);
+            IEnumerable<Product> products = _unitOfWork.ProductRepository.GetAll(includeProperties: "Category" + "CoverType");
 
 
-            return View(productList);
+            return View(products.ToPagedList(pageNumber,pageSize));
         }
 
         // GET: Admin/Product/Details/5
@@ -74,11 +77,12 @@ namespace ASP_MVC.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create([Bind("Id,Title,Description,ISBN,Author,Price,Price50,Price100,ImageUrl,CategoryId,CoverTypeId")] Product product)
          {
+            
             if (ModelState.IsValid)
             {
                 _unitOfWork.ProductRepository.Add(product);
                 _unitOfWork.Save();
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
             }
             ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name", product.CategoryId);
             ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name", product.CoverTypeId);
@@ -102,7 +106,7 @@ namespace ASP_MVC.Areas.Admin.Controllers
             }
             ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name", product.CategoryId);
             ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name", product.CoverTypeId);
-            return View("create",product);
+            return View(product);
         }
 
         // POST: Admin/Product/Edit/5

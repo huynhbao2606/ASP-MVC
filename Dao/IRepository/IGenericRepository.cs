@@ -7,7 +7,7 @@ namespace ASP_MVC.Dao.IRepository
     {
         T GetEntityById(int? Id);
 
-        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(string? includeProperties = null);
         IEnumerable<T> GetEntities(Expression<Func<T, bool>> filter,
                                             Func<IQueryable<T>, IOrderedQueryable<T>> orderBy);
 

@@ -33,11 +33,19 @@ namespace ASP_MVC.Dao
 			return contextSet.Find(id);
 		}
 
-		public IEnumerable<T> GetAll()
+		public IEnumerable<T> GetAll(string? includeProperties = null)
 		{
-			// return _context.Categories.ToList();
-			/// ??????
-			return contextSet.ToList();
+            IQueryable<T> query = contextSet;
+            if (!string.IsNullOrEmpty(includeProperties))
+            {
+                foreach (var includeProp in includeProperties
+                             .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProp);
+                }
+            }
+
+            return contextSet.ToList();
         }
         public void Delete(T entity)
         {

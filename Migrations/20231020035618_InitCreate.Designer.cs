@@ -12,14 +12,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP_MVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231018064114_AddProductAndCoverType")]
-    partial class AddProductAndCoverType
+    [Migration("20231020035618_InitCreate")]
+    partial class InitCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.22")
+                .HasAnnotation("ProductVersion", "6.0.23")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);

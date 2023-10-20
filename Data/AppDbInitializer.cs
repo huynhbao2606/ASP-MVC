@@ -1,4 +1,7 @@
-﻿using ASP_MVC.Models;
+﻿using System;
+using ASP_MVC.Data;
+using ASP_MVC.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ASP_MVC.Data
 {
@@ -8,11 +11,11 @@ namespace ASP_MVC.Data
         {
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
             {
-                var context = serviceScope.ServiceProvider.GetService <ApplicationDbContext>();
+                var context = serviceScope.ServiceProvider.GetService<ApplicationDbContext>();
 
                 if (context != null)
                 {
-                    context.Database.EnsureCreated();
+                    context.Database.Migrate();
                     if (!context.Categories.Any())
                     {
                         context.Categories.AddRange(
@@ -40,6 +43,37 @@ namespace ASP_MVC.Data
                                 }
                             }
                         );
+                        context.SaveChanges();
+                    }
+
+                    if (!context.CoverTypes.Any())
+                    {
+                        context.CoverTypes.AddRange(new List<CoverType>
+                        {
+                            new CoverType() {Name = "Hard cover"},
+                            new CoverType() {Name = "Soft cover"}
+                        });
+                        context.SaveChanges();
+                    }
+
+                    if (!context.Products.Any())
+                    {
+                        context.Products.AddRange(new List<Product>
+                        {
+                            new Product()
+                            {
+                                Title = "Superman comics",
+                                Description = "Description of Superman comics cewcw cwcw wcwcw cewcwcw fewfew",
+                                ISBN = "ISBN",
+                                Author = "author 1",
+                                Price = 12.99,
+                                Price50 = 12,
+                                Price100 = 11,
+                                ImageUrl = "",
+                                Category = context.Categories.Where(c => c.Name == "Comic").FirstOrDefault(),
+                                CoverType = context.CoverTypes.Where(c => c.Name == "Soft cover").FirstOrDefault(),
+                            }
+                        });
                         context.SaveChanges();
                     }
                 }

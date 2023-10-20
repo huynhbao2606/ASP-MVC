@@ -22,9 +22,7 @@ namespace ASP_MVC
             ));
 
 
-            builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
-            builder.Services.AddScoped<IGenericRepository<Product>, GenericRepository<Product>>();
-            builder.Services.AddScoped<IGenericRepository<CoverType>, GenericRepository<CoverType>>();
+         
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
@@ -51,7 +49,7 @@ namespace ASP_MVC
             pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 
-            //AppDbInitializer.Seed(app);
+            AppDbInitializer.Seed(app);
 
             app.Run();
         }
