@@ -35,10 +35,14 @@ namespace ASP_MVC.Areas.Admin.Controllers
 
             int pageNumber = (page ?? 1);
 
-            IEnumerable<Product> products = _unitOfWork.ProductRepository.GetAll(includeProperties: "Category" + "CoverType");
+            IEnumerable<Product> productList = _unitOfWork.ProductRepository.GetEntities(
+                filter: null,
+                orderBy: null,
+                includeProperties: "Category,CoverType"
+            );
 
 
-            return View(products.ToPagedList(pageNumber,pageSize));
+            return View(productList.ToPagedList(pageNumber,pageSize));
         }
 
         // GET: Admin/Product/Details/5
@@ -84,8 +88,8 @@ namespace ASP_MVC.Areas.Admin.Controllers
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name", product.CategoryId);
-            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name", product.CoverTypeId);
+            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name",product.CategoryId);
+            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name",product.CoverTypeId);
             return View(product);
         }
 
@@ -104,8 +108,8 @@ namespace ASP_MVC.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name", product.CategoryId);
-            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name", product.CoverTypeId);
+            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name", selectedValue: product.CategoryId);
+            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name", selectedValue: product.CoverTypeId);
             return View(product);
         }
 

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace ASP_MVC.Models
 {
@@ -10,32 +11,33 @@ namespace ASP_MVC.Models
         public int Id { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string Title { get; set; } = "";
 
-        public string Description { get; set; }
-
-        [Required]
-        public string ISBN { get; set; }
+        public string? Description { get; set; }
 
         [Required]
-        public string Author { get; set; }
+        public string ISBN { get; set; } = "";
+
+        [Required]
+        public string Author { get; set; } = "";
 
         [Required]
         public double Price { get; set; }
 
-        public double Price50 { get; set; }
-        public double Price100 { get; set; }
+        public double? Price50 { get; set; }
 
-        public string ImageUrl { get; set; }
+        public double? Price100 { get; set; }
 
-        [DisplayName("Category")]
+        public string ImageUrl { get; set; } = "default.jpg";
+
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
+        [ValidateNever]
         public Category Category { get; set; }
 
-        [DisplayName("CoverType")]
         public int CoverTypeId { get; set; }
         [ForeignKey("CoverTypeId")]
+        [ValidateNever]
         public CoverType CoverType { get; set; }
     }
 }

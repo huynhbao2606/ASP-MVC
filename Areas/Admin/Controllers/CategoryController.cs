@@ -77,9 +77,9 @@ namespace ASP_MVC.Controllers
             
             /// validate
             bool checkCategoryNameExist = _unitOfWork.CategoryRepository
-                .GetEntities(i => i.Name == category.Name && i.Id != category.Id, null).Any();
+                .GetEntities(i => i.Name == category.Name && i.Id != category.Id, null,null).Any();
             bool checkDisplayOrderExist = _unitOfWork.CategoryRepository
-                .GetEntities(i => i.DisplayOrder == category.DisplayOrder && i.Id != category.Id, null).Any();
+                .GetEntities(i => i.DisplayOrder == category.DisplayOrder && i.Id != category.Id, null,null).Any();
 
             if (checkCategoryNameExist)
             {
@@ -136,9 +136,9 @@ namespace ASP_MVC.Controllers
         {
             /// validate
             bool checkCategoryNameExist = _unitOfWork.CategoryRepository
-                .GetEntities(i => i.Name == category.Name && i.Id != category.Id, null).Any();
+                .GetEntities(i => i.Name == category.Name && i.Id != category.Id, null,null).Any();
             bool checkDisplayOrderExist = _unitOfWork.CategoryRepository
-                .GetEntities(i => i.DisplayOrder == category.DisplayOrder && i.Id != category.Id, null).Any();
+                .GetEntities(i => i.DisplayOrder == category.DisplayOrder && i.Id != category.Id, null,null).Any();
 
             if (checkCategoryNameExist)
             {

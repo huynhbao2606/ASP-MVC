@@ -8,65 +8,71 @@ namespace ASP_MVC.Dao
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
 	{
-		private readonly ApplicationDbContext _context;
-		private DbSet<T> contextSet;
+        private readonly ApplicationDbContext _db;
+        private DbSet<T> dbSet;
 
-		public GenericRepository(ApplicationDbContext context)
-		{
-			_context = context;
-			this.contextSet = _context.Set<T>(); //// create DbSet<T>
+        public GenericRepository(ApplicationDbContext db)
+        {
+            _db = db;
+            this.dbSet = _db.Set<T>(); //// create DbSet<T>
         }
 
-		public void Add (T entity)
-		{
-			contextSet.Add(entity);
-		}
-
-		public void Update(T entity)
-		{
-			contextSet.Attach(entity);
-			_context.Entry(entity).State = EntityState.Modified;
-		}
-
-		public T GetEntityById(int? id)
-		{
-			return contextSet.Find(id);
-		}
-
-		public IEnumerable<T> GetAll(string? includeProperties = null)
-		{
-            IQueryable<T> query = contextSet;
-            if (!string.IsNullOrEmpty(includeProperties))
-            {
-                foreach (var includeProp in includeProperties
-                             .Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
-                {
-                    query = query.Include(includeProp);
-                }
-            }
-
-            return contextSet.ToList();
+        public void Add(T entity)
+        {
+            dbSet.Add(entity);
         }
+
+        public void Update(T entity)
+        {
+            dbSet.Attach(entity);
+            _db.Entry(entity).State = EntityState.Modified;
+        }
+
+        public T GetEntityById(int? id)
+        {
+            return dbSet.Find(id);
+        }
+
+        public IEnumerable<T> GetAll()
+        {
+            return dbSet.ToList();
+        }
+
         public void Delete(T entity)
         {
-            if(_context.Entry(entity).State == EntityState.Detached)
+            if (_db.Entry(entity).State == EntityState.Detached)
             {
-                contextSet.Attach(entity);
+                dbSet.Attach(entity);
             }
-            contextSet.Remove(entity);
+            dbSet.Remove(entity);
         }
+
         public void DeleteById(object id)
         {
-            T entityToDelete = contextSet.Find(id);
+            T entityToDelete = dbSet.Find(id);
             Delete(entityToDelete);
         }
+
+
         public IEnumerable<T> GetEntities(Expression<Func<T, bool>> filter,
-                                            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy)
+                                            Func<IQueryable<T>, IOrderedQueryable<T>> orderBy,
+                                            string includeProperties)
         {
-            IQueryable<T> query = contextSet.AsQueryable();
+            IQueryable<T> query = dbSet.AsQueryable();
             if (filter != null)
             {
                 query = query.Where(filter);
+            }
+
+            if (includeProperties != null && includeProperties != "")
+            {
+                string[] splitedIncludeProperties =
+                    includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+
+                foreach (var property in splitedIncludeProperties)
+                {
+                    query = query.Include(property);
+                }
             }
 
             if (orderBy != null)
@@ -78,7 +84,7 @@ namespace ASP_MVC.Dao
         }
         public void Save()
         {
-            _context.SaveChanges();
+            _db.SaveChanges();
         }
     }
 }

@@ -82,7 +82,6 @@ namespace ASP_MVC.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ISBN")
@@ -96,10 +95,10 @@ namespace ASP_MVC.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<double>("Price100")
+                    b.Property<double?>("Price100")
                         .HasColumnType("float");
 
-                    b.Property<double>("Price50")
+                    b.Property<double?>("Price50")
                         .HasColumnType("float");
 
                     b.Property<string>("Title")
