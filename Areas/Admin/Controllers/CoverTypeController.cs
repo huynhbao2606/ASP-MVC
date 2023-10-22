@@ -2,37 +2,46 @@
 using Microsoft.EntityFrameworkCore;
 using ASP_MVC.Data;
 using ASP_MVC.Models;
+using ASP_MVC.Dao.IRepository;
+using X.PagedList;
 
 namespace ASP_MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class CoverTypeController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public CoverTypeController(ApplicationDbContext context)
+        public CoverTypeController(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         // GET: Admin/CoverType
-        public async Task<IActionResult> Index()
+        public  IActionResult Index(int? page)
         {
-              return _context.CoverTypes != null ? 
-                          View(await _context.CoverTypes.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.CoverTypes'  is null.");
+            if (page == null) page = 1;
+
+            int pageSize = 7;
+
+
+            int pageNumber = (page ?? 1);
+
+            var categoryList = _unitOfWork.CoverTypeRepository.GetAll().OrderBy(i => i.Name).ToPagedList(pageNumber, pageSize);
+
+
+            return View(categoryList);
         }
 
         // GET: Admin/CoverType/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int? id)
         {
-            if (id == null || _context.CoverTypes == null)
+            if (id == null || _unitOfWork.CoverTypeRepository.GetEntityById == null)
             {
                 return NotFound();
             }
 
-            var coverType = await _context.CoverTypes
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var coverType = _unitOfWork.CoverTypeRepository.GetEntityById;
             if (coverType == null)
             {
                 return NotFound();
@@ -52,26 +61,26 @@ namespace ASP_MVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name")] CoverType coverType)
+        public IActionResult Create([Bind("Id,Name")] CoverType coverType)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(coverType);
-                await _context.SaveChangesAsync();
+                _unitOfWork.CoverTypeRepository.Add(coverType);
+                _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
             }
             return View(coverType);
         }
 
         // GET: Admin/CoverType/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int? id)
         {
-            if (id == null || _context.CoverTypes == null)
+            if (id == null || _unitOfWork.CoverTypeRepository.GetEntityById == null)
             {
                 return NotFound();
             }
 
-            var coverType = await _context.CoverTypes.FindAsync(id);
+            var coverType = _unitOfWork.CoverTypeRepository.GetEntityById(id);
             if (coverType == null)
             {
                 return NotFound();
@@ -84,7 +93,7 @@ namespace ASP_MVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name")] CoverType coverType)
+        public IActionResult Edit(int id, [Bind("Id,Name")] CoverType coverType)
         {
             if (id != coverType.Id)
             {
@@ -95,19 +104,14 @@ namespace ASP_MVC.Areas.Admin.Controllers
             {
                 try
                 {
-                    _context.Update(coverType);
-                    await _context.SaveChangesAsync();
+                    _unitOfWork.CoverTypeRepository.Update(coverType);
+                    _unitOfWork.Save();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CoverTypeExists(coverType.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
+                    
                         throw;
-                    }
+                   
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -115,15 +119,14 @@ namespace ASP_MVC.Areas.Admin.Controllers
         }
 
         // GET: Admin/CoverType/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int? id)
         {
-            if (id == null || _context.CoverTypes == null)
+            if (id == null || _unitOfWork.CoverTypeRepository.GetEntityById == null)
             {
                 return NotFound();
             }
 
-            var coverType = await _context.CoverTypes
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var coverType = _unitOfWork.CoverTypeRepository.GetEntityById(id);
             if (coverType == null)
             {
                 return NotFound();
@@ -135,25 +138,21 @@ namespace ASP_MVC.Areas.Admin.Controllers
         // POST: Admin/CoverType/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int id)
         {
-            if (_context.CoverTypes == null)
+            if (_unitOfWork.CoverTypeRepository.GetEntityById == null)
             {
                 return Problem("Entity set 'ApplicationDbContext.CoverTypes'  is null.");
             }
-            var coverType = await _context.CoverTypes.FindAsync(id);
+            var coverType = _unitOfWork.CoverTypeRepository.GetEntityById(id);
             if (coverType != null)
             {
-                _context.CoverTypes.Remove(coverType);
+                _unitOfWork.CoverTypeRepository.Delete(coverType);
             }
-            
-            await _context.SaveChangesAsync();
+
+            _unitOfWork.Save();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CoverTypeExists(int id)
-        {
-          return (_context.CoverTypes?.Any(e => e.Id == id)).GetValueOrDefault();
-        }
     }
 }

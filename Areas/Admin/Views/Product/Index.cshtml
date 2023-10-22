@@ -8,57 +8,67 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<div class="container py-3">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-body-secondary">Product List</h2>
+        </div>
+        <div class="col-6 text-end py-1">
+            <a asp-controller="Product" asp-action="Create" role="button" class="btn btn-primary">
+                <i class="fa-solid fa-plus fa-beat"> &nbsp;</i> Create New Product
+            </a>
+        </div>
+    </div>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<table class="table table-dark">
     <thead>
         <tr>
-            <th>
+            <th scope="col">
                 Title
             </th>
-            <th>
+            <th scope="col">
                 Description
             </th>
-            <th>
+            <th scope="col">
                 ISBN
             </th>
-            <th>
+            <th scope="col">
                 Author
             </th>
-            <th>
+            <th scope="col">
                 Price
             </th>
-            <th>
+            <th scope="col">
                 Price 50
             </th>
-            <th>
+            <th scope="col">
                 Price 100
             </th>
-            <th>
+            <th scope="col">
                 Image
             </th>
-            <th>
+            <th scope="col">
                 Category
             </th>
-            <th>
+            <th scope="col">
                 CoverType
             </th>
-            <th></th>
+            <th scope="col">
+                Action  
+            </th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
-        <tr>
+         <tr class="table-active">
             <td>
-                @item.Title
+                    @item.Title
             </td>
             <td>
                     @item.Description
             </td>
-            <td>
+            <td>    
                     @item.ISBN
             </td>
             <td>
@@ -73,7 +83,9 @@
             <td>
                     @item.Price100
             </td>
-           
+            <td>
+                    @item.ImageUrl
+            </td>
             <td>
                     @item.Category.Name
             </td>
@@ -81,9 +93,11 @@
                     @item.CoverType.Name
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa-solid fa-circle-info">&nbsp;</i></a>
+
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa-solid fa-pen-to-square">&nbsp;</i></a>
+
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa-solid fa-trash">&nbsp;</i></a>
             </td>
         </tr>
 }
