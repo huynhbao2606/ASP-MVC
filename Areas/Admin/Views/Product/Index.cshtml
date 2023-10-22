@@ -84,7 +84,7 @@
                     @item.Price100
             </td>
             <td>
-                    @item.ImageUrl
+                <img src="~/images/product/@item.ImageUrl" style="width: 80px;" />
             </td>
             <td>
                     @item.Category.Name
@@ -103,3 +103,14 @@
 }
     </tbody>
 </table>
+</table>
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+            new PagedListRenderOptions
+           {
+                        DisplayLinkToIndividualPages = true,
+                        MaximumPageNumbersToDisplay = 10,
+                        LiElementClasses = new string[] { "btn-group me-1" },
+                        PageClasses = new string[] { "btn btn-secondary" }
+           })

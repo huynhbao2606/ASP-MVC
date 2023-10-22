@@ -12,6 +12,7 @@ using ASP_MVC.Dao.IRepository;
 using X.PagedList;
 using ASP_MVC.Dao;
 using System.Collections;
+using Microsoft.AspNetCore.Hosting;
 
 namespace ASP_MVC.Areas.Admin.Controllers
 {
@@ -19,10 +20,12 @@ namespace ASP_MVC.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public ProductController(IUnitOfWork unitOfWork)
+        public ProductController(IUnitOfWork unitOfWork, IWebHostEnvironment webHostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Admin/Product
@@ -79,11 +82,23 @@ namespace ASP_MVC.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Title,Description,ISBN,Author,Price,Price50,Price100,ImageUrl,CategoryId,CoverTypeId")] Product product)
+        public IActionResult Create([Bind("Id,Title,Description,ISBN,Author,Price,Price50,Price100,ImageUrl,CategoryId,CoverTypeId")] Product product, IFormFile file)
          {
             
             if (ModelState.IsValid)
             {
+                var wwwRootPath = _webHostEnvironment.WebRootPath;
+                if (file != null)
+                {
+                    var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
+                    var productPath = Path.Combine(wwwRootPath, "images/product");
+
+                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                    {
+                        file.CopyTo(fileStream);
+                    }
+                    product.ImageUrl = fileName;
+                }
                 _unitOfWork.ProductRepository.Add(product);
                 _unitOfWork.Save();
                 return RedirectToAction(nameof(Index));
@@ -118,7 +133,7 @@ namespace ASP_MVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Title,Description,ISBN,Author,Price,Price50,Price100,ImageUrl,CategoryId,CoverTypeId")] Product product)
+        public IActionResult Edit(int id, [Bind("Id,Title,Description,ISBN,Author,Price,Price50,Price100,ImageUrl,CategoryId,CoverTypeId")] Product product, IFormFile file)
         {
             if (id != product.Id)
             {
@@ -129,6 +144,25 @@ namespace ASP_MVC.Areas.Admin.Controllers
             {
                 try
                 {
+                    var wwwRootPath = _webHostEnvironment.WebRootPath;
+                    if (file != null)
+                    {
+                        var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
+                        var productPath = Path.Combine(wwwRootPath, "images/product");
+                        var oldImagePath = Path.Combine(productPath, product.ImageUrl);
+
+                        if (System.IO.File.Exists(oldImagePath) && product.ImageUrl != "default.jpg")
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+
+                        using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                        {
+                            file.CopyTo(fileStream);
+                        }
+                        product.ImageUrl = fileName;
+                    }
+
                     _unitOfWork.ProductRepository.Update(product);
                     _unitOfWork.Save();
                 }
