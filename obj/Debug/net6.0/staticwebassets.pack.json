@@ -17,6 +17,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\aca9fc4b-3d25-4257-82c3-f18006a6c9f2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\aca9fc4b-3d25-4257-82c3-f18006a6c9f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg"
+    },
+    {
       "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

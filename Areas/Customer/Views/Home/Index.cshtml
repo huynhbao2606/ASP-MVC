@@ -1,8 +1,44 @@
-﻿@{
+﻿@model X.PagedList.IPagedList<Product>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1>@ViewData["Title"]</h1>
+
+<p>List of all products</p>
+
+<div class="g-4 row row-cols-2 row-cols-md-5">
+@foreach (var product in Model)
+    {
+<div class="card" style="width: 18rem;">
+    <img alt="@product.ImageUrl" src="~/images/product/@product.ImageUrl" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">@product.Title</h5>
+                <p class="mb-1 small text-muted">
+                <i class="fa-solid fa-tag" style="min-width: 20px"></i> @product.Category.Name
+                </p>
+                <p class="small text-muted">
+                    <i class="fa-book-open-cover fa-solid" style="min-width: 20px"></i> @product.CoverType.Name
+                </p>
+                <p class="fw-semibold mb-0 mt-auto text-success">@($"{product.Price,0:C0}")</p>
+                <p class="card-text">@product.Description</p>
+                <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary">Details</a>
+        </div>
+    </div>
+    }
 </div>
+
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }),
+            new PagedListRenderOptions
+           {
+                        DisplayLinkToIndividualPages = true,
+                        MaximumPageNumbersToDisplay = 10,
+                        LiElementClasses = new string[] { "btn-group me-1" },
+                        PageClasses = new string[] { "btn btn-secondary" }
+           })

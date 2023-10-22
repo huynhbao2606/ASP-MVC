@@ -1,24 +1,43 @@
-﻿using ASP_MVC.Models;
+﻿using ASP_MVC.Dao.IRepository;
+using ASP_MVC.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+using X.PagedList;
 
 namespace ASP_MVC.Areas.Customer.Controllers
 {
     [Area("Customer")]
-    public class HomeController : Controller
+    public class HomeController : Controller 
+    // GET: Admin/Product
+    
     {
-        private readonly ILogger<HomeController> _logger;
+    private readonly IUnitOfWork _unitOfWork;
+    private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IUnitOfWork unitOfWork,ILogger<HomeController> logger)
         {
-
+            _unitOfWork = unitOfWork;
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            return View();
+            if (page == null) page = 1;
+
+            int pageSize = 4;
+
+
+            int pageNumber = (page ?? 1);
+
+            IEnumerable<Product> productList = _unitOfWork.ProductRepository.GetEntities(
+                filter: null,
+                orderBy: null,
+                includeProperties: "Category,CoverType"
+            );
+
+
+            return View(productList.ToPagedList(pageNumber, pageSize));
         }
 
         public IActionResult Privacy()
