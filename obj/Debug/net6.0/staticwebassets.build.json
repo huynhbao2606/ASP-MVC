@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "B0PM8v2xtUxMpKhIlbf3wJaMcYgbCF13O4/VG4TYHt0=",
+  "Hash": "4QDoZ90IM66NzLOW0uLXMbo2p1uHXq46BBsDWeGS9Sc=",
   "Source": "ASP-MVC",
   "BasePath": "_content/ASP-MVC",
   "Mode": "Default",
@@ -136,6 +136,23 @@
       "OriginalItemSpec": "wwwroot\\images\\product\\afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg"
     },
     {
+      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\d17a77c3-f18f-426f-bb09-923cd61b1525.jpg",
+      "SourceId": "ASP-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "BasePath": "_content/ASP-MVC",
+      "RelativePath": "images/product/d17a77c3-f18f-426f-bb09-923cd61b1525.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\d17a77c3-f18f-426f-bb09-923cd61b1525.jpg"
+    },
+    {
       "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
@@ -151,6 +168,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg",
+      "SourceId": "ASP-MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "BasePath": "_content/ASP-MVC",
+      "RelativePath": "images/product/fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg"
     },
     {
       "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\js\\site.js",
