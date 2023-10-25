@@ -114,77 +114,102 @@ namespace ASP_MVC.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Upsert(
-        [Bind("Id,Name,Author,ISBN,Price,Price50,Price100,Description,CategoryId,CoverTypeId")]
-        ProductDTO productDTO,
+        [Bind("Product")]ProductDTO productDto,
         IFormFile? file)
         {
 
+            bool isCreate = productDto.Product.Id == 0;
+
+            /// validate
+            bool checkProductTitleExist = _unitOfWork.ProductRepository
+                .GetEntities(
+                    filter: isCreate
+                        ? i => i.Title == productDto.Product.Title
+                        : i => i.Title == productDto.Product.Title && i.Id != productDto.Product.Id,
+                    orderBy: null,
+                    includeProperties: null)
+                .Any();
+
+            if (checkProductTitleExist)
+            {
+                ModelState.AddModelError("Name", "The product title already exist");
+                TempData["productTitleError"] = "The product title already exist";
+            }
+
+            productDto.CategoryList = _unitOfWork.CategoryRepository.GetAll().Select(
+                    i => new SelectListItem
+                    {
+                        Text = i.Name,
+                        Value = i.Id.ToString()
+                    });
+
+            productDto.CoverTypeList = _unitOfWork.CoverTypeRepository.GetAll().Select(
+                i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                });
+
+            /// save data
             if (ModelState.IsValid)
-             {
-                
-                var wwwRootPath = _webHostEnvironment.WebRootPath;
+            {
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
 
                 if (file != null)
                 {
-                    if(productDTO.Product.ImageUrl != null && productDTO.Product.ImageUrl != "")
+                    if (productDto.Product.ImageUrl != null && productDto.Product.ImageUrl != "")
                     {
-
-                        var oldImagePath = Path.Combine(wwwRootPath, productDTO.Product.ImageUrl.TrimStart(Path.DirectorySeparatorChar));
+                        var oldImagePath = Path.Combine(wwwRootPath,
+                            productDto.Product.ImageUrl.TrimStart(Path.DirectorySeparatorChar));
 
                         if (System.IO.File.Exists(oldImagePath))
                         {
                             System.IO.File.Delete(oldImagePath);
                         }
-
                     }
 
+                    /// upload to wwwroot/images/products
+                    var uploads = Path.Combine(wwwRootPath, "images" + Path.DirectorySeparatorChar + "product");
+                    string fileName = Guid.NewGuid().ToString();
+                    var extension = Path.GetExtension(file.FileName);
 
-                    var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
-                    var productPath = Path.Combine(wwwRootPath, "images/product");
-
-                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                    using (var fileStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
                     {
-
-                        file.CopyTo(fileStream);
-
+                        file.CopyTo(fileStreams);
                     }
 
-                    productDTO.Product.ImageUrl = fileName;
-
+                    productDto.Product.ImageUrl = Path.DirectorySeparatorChar + "images"
+                                                + Path.DirectorySeparatorChar + "product"
+                                                + Path.DirectorySeparatorChar + fileName + extension;
                 }
 
-                if (productDTO.Product.Id == 0)
-                {
-         
-                    _unitOfWork.ProductRepository.Add(productDTO.Product);
+                
 
+                if (isCreate && file == null)
+                {
+                    TempData["uploadFileError"] = "require file";
+                    return View(productDto);
+                }
+
+                if (isCreate)
+                {
+                    _unitOfWork.ProductRepository.Add(productDto.Product);
                 }
                 else
                 {
-
-                    _unitOfWork.ProductRepository.Update(productDTO.Product);
-
+                    _unitOfWork.ProductRepository.Update(productDto.Product);
                 }
+
+
+
                 _unitOfWork.Save();
                 return RedirectToAction("Index");
             }
 
-            productDTO.CategoryList = _unitOfWork.CategoryRepository.GetAll().Select(
-                i => new SelectListItem
-                {
-                    Text = i.Name,
-                    Value = i.Id.ToString()
-                });
-
-            productDTO.CoverTypeList = _unitOfWork.CoverTypeRepository.GetAll().Select(
-                i => new SelectListItem
-                {
-                    Text = i.Name,
-                    Value = i.Id.ToString()
-                });
-
-            return View(productDTO);
+            return View(productDto);
         }
+
+           
 
 
 
@@ -226,7 +251,19 @@ namespace ASP_MVC.Areas.Admin.Controllers
 
             if (product != null)
             {
-               _unitOfWork.ProductRepository.Delete(product);
+                string wwwRootPath = _webHostEnvironment.WebRootPath;
+
+                if (product.ImageUrl != null && product.ImageUrl != "")
+                {
+                    var oldImagePath = Path.Combine(wwwRootPath,
+                        product.ImageUrl.TrimStart(Path.DirectorySeparatorChar));
+
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+                _unitOfWork.ProductRepository.Delete(product);
             }
 
             _unitOfWork.Save();

@@ -73,15 +73,19 @@
         </div>
 
         <div class="form-floating mb-3">
-            <select asp-for="Product.CoverTypeId"
-                    asp-items="@Model.CoverTypeList"
-                    class="form-select"
-                    aria-label="select cover type">
-                <option disabled selected>--Select cover type--</option>
-            </select>
-            <label asp-for="Product.CoverTypeId">Cover Type</label>
-            <span asp-validation-for="Product.CoverTypeId" class="text-danger"></span>
+          <select class="form-select" 
+                  id="coverTypeSelect" 
+                  asp-for="Product.CoverTypeId"
+                  asp-items="@Model.CoverTypeList" 
+                  aria-label="Select cover type">
+            <option disabled selected>--Select cover type--</option>
+          </select>
+          <label for="coverTypeSelect">Cover Type</label>
+          <span asp-validation-for="Product.CoverTypeId" class="text-danger"></span>
         </div>
+
+
+        
 
         <button type="submit" class="btn btn-primary" style="width:150px;">@(Model.Product.Id != 0 ? "Update" : "Create")</button>
 

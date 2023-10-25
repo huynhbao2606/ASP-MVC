@@ -15,7 +15,7 @@
 @foreach (var product in Model)
     {
 <div class="card" style="width: 18rem;">
-    <img alt="@product.ImageUrl" src="~/images/product/@product.ImageUrl" class="card-img-top">
+    <img alt="@product.ImageUrl" src="@product.ImageUrl" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title">@product.Title</h5>
                 <p class="mb-1 small text-muted">

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J449uDBp6mfvGF38jeULQ2HF/Hl4dibfDD2QAzVFx58=",
+  "Hash": "dBxADQzikzUpqWwlnu+uBfepbTopOOGoAWf3UI4Q+UE=",
   "Source": "ASP-MVC",
   "BasePath": "_content/ASP-MVC",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ASP-MVC\\wwwroot",
       "Source": "ASP-MVC",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ASP-MVC.styles.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ASP-MVC.styles.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "ASP-MVC.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ASP-MVC.styles.css"
+      "OriginalItemSpec": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ASP-MVC.styles.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ASP-MVC.bundle.scp.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ASP-MVC.bundle.scp.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "ASP-MVC.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ASP-MVC.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ASP-MVC.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\css\\darktheme.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\css\\darktheme.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "css/darktheme.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\darktheme.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\css\\site.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\favicon.ico",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -102,12 +102,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\0be719f9-3f9b-423a-a294-a2d6fe6970b0.png",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\images\\product\\4de5695b-b936-4ae6-9507-2124c93b0c1d.jpg",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/0be719f9-3f9b-423a-a294-a2d6fe6970b0.png",
+      "RelativePath": "images/product/4de5695b-b936-4ae6-9507-2124c93b0c1d.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\0be719f9-3f9b-423a-a294-a2d6fe6970b0.png"
+      "OriginalItemSpec": "wwwroot\\images\\product\\4de5695b-b936-4ae6-9507-2124c93b0c1d.jpg"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\39252ab3-5840-40ed-b4aa-8cd794d80070.png",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\images\\product\\a21f2116-a806-4205-8de2-fdcf846d1580.jpg",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/39252ab3-5840-40ed-b4aa-8cd794d80070.png",
+      "RelativePath": "images/product/a21f2116-a806-4205-8de2-fdcf846d1580.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,149 +133,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\39252ab3-5840-40ed-b4aa-8cd794d80070.png"
+      "OriginalItemSpec": "wwwroot\\images\\product\\a21f2116-a806-4205-8de2-fdcf846d1580.jpg"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\3a09f817-2ef8-4298-bd80-de673d91c8ab.png",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\js\\site.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/3a09f817-2ef8-4298-bd80-de673d91c8ab.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\3a09f817-2ef8-4298-bd80-de673d91c8ab.png"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\53be85b9-c232-463e-8387-87d30af9b8f8.png",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/53be85b9-c232-463e-8387-87d30af9b8f8.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\53be85b9-c232-463e-8387-87d30af9b8f8.png"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\aca9fc4b-3d25-4257-82c3-f18006a6c9f2.jpg",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/aca9fc4b-3d25-4257-82c3-f18006a6c9f2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\aca9fc4b-3d25-4257-82c3-f18006a6c9f2.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\aded4510-cba9-4812-a4de-bcea08202b2e.png",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/aded4510-cba9-4812-a4de-bcea08202b2e.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\aded4510-cba9-4812-a4de-bcea08202b2e.png"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\d17a77c3-f18f-426f-bb09-923cd61b1525.jpg",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/d17a77c3-f18f-426f-bb09-923cd61b1525.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\d17a77c3-f18f-426f-bb09-923cd61b1525.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/f1083ce8-db8e-4899-bd60-f500f77796be.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
-      "BasePath": "_content/ASP-MVC",
-      "RelativePath": "images/product/fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\js\\site.js",
-      "SourceId": "ASP-MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -289,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -306,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -323,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -340,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -357,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -374,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -391,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -408,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -425,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -442,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -459,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -476,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -493,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -510,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -527,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -544,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -561,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -578,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -595,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -612,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -629,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -646,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -663,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -680,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -697,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -714,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -731,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -748,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -765,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -782,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -799,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -816,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -833,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -850,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -867,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -884,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -901,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -918,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -935,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -952,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -969,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -986,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1003,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1020,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1037,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1054,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1071,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1088,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1105,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1122,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1139,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1156,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1173,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1190,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1207,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1224,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1241,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "ASP-MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\",
       "BasePath": "_content/ASP-MVC",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",

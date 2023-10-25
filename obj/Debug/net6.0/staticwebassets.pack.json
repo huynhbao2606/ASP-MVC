@@ -1,291 +1,259 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ASP-MVC.bundle.scp.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ASP-MVC.bundle.scp.css",
       "PackagePath": "staticwebassets\\ASP-MVC.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\css\\darktheme.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\css\\darktheme.css",
       "PackagePath": "staticwebassets\\css\\darktheme.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\0be719f9-3f9b-423a-a294-a2d6fe6970b0.png",
-      "PackagePath": "staticwebassets\\images\\product\\0be719f9-3f9b-423a-a294-a2d6fe6970b0.png"
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\images\\product\\4de5695b-b936-4ae6-9507-2124c93b0c1d.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\4de5695b-b936-4ae6-9507-2124c93b0c1d.jpg"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\39252ab3-5840-40ed-b4aa-8cd794d80070.png",
-      "PackagePath": "staticwebassets\\images\\product\\39252ab3-5840-40ed-b4aa-8cd794d80070.png"
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\images\\product\\a21f2116-a806-4205-8de2-fdcf846d1580.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\a21f2116-a806-4205-8de2-fdcf846d1580.jpg"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\3a09f817-2ef8-4298-bd80-de673d91c8ab.png",
-      "PackagePath": "staticwebassets\\images\\product\\3a09f817-2ef8-4298-bd80-de673d91c8ab.png"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\53be85b9-c232-463e-8387-87d30af9b8f8.png",
-      "PackagePath": "staticwebassets\\images\\product\\53be85b9-c232-463e-8387-87d30af9b8f8.png"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\aca9fc4b-3d25-4257-82c3-f18006a6c9f2.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\aca9fc4b-3d25-4257-82c3-f18006a6c9f2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\aded4510-cba9-4812-a4de-bcea08202b2e.png",
-      "PackagePath": "staticwebassets\\images\\product\\aded4510-cba9-4812-a4de-bcea08202b2e.png"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\afbac44a-d3d6-4b84-aac3-c9ba3a607e4e.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\d17a77c3-f18f-426f-bb09-923cd61b1525.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\d17a77c3-f18f-426f-bb09-923cd61b1525.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\f1083ce8-db8e-4899-bd60-f500f77796be.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\images\\product\\fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\fcb62715-5d52-4626-9582-e8ffe5f6c5fc.jpg"
-    },
-    {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\hp\\Desktop\\ASP-MVC-master\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\AA HCM\\Desktop\\ASP-MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
