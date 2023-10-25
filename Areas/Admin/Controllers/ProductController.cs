@@ -118,7 +118,6 @@ namespace ASP_MVC.Areas.Admin.Controllers
         ProductDTO productDTO,
         IFormFile? file)
         {
-            bool IsCreate = productDTO.Product.Id == 0;
 
             if (ModelState.IsValid)
              {
@@ -153,12 +152,8 @@ namespace ASP_MVC.Areas.Admin.Controllers
                     productDTO.Product.ImageUrl = fileName;
 
                 }
-                if(IsCreate && file == null)
-                {
-                    TempData["uploadFileError"] = "require file";
-                }
 
-                if (IsCreate)
+                if (productDTO.Product.Id == 0)
                 {
          
                     _unitOfWork.ProductRepository.Add(productDTO.Product);
@@ -173,7 +168,22 @@ namespace ASP_MVC.Areas.Admin.Controllers
                 _unitOfWork.Save();
                 return RedirectToAction("Index");
             }
-             return View(productDTO);
+
+            productDTO.CategoryList = _unitOfWork.CategoryRepository.GetAll().Select(
+                i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                });
+
+            productDTO.CoverTypeList = _unitOfWork.CoverTypeRepository.GetAll().Select(
+                i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                });
+
+            return View(productDTO);
         }
 
 

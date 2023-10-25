@@ -4,6 +4,9 @@ using ASP_MVC.Data;
 using ASP_MVC.Models;
 using ASP_MVC.Dao.IRepository;
 using X.PagedList;
+using ASP_MVC.ViewModels;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ASP_MVC.Areas.Admin.Controllers
 {
@@ -50,27 +53,75 @@ namespace ASP_MVC.Areas.Admin.Controllers
             return View(coverType);
         }
 
-        // GET: Admin/CoverType/Create
-        public IActionResult Create()
+
+
+
+        // GET: Admin/Product/Upsert
+
+        public IActionResult Upsert(int? id)
         {
-            return View();
+
+            CoverType coverType;
+
+            if (id == null || id == 0)
+            {
+                coverType = new CoverType();
+            }
+            else
+            {
+                coverType = _unitOfWork.CoverTypeRepository.GetEntityById((int)id);
+
+                if (coverType == null)
+                {
+                    return NotFound();
+                }
+            }
+
+          
+            return View(coverType);
         }
 
-        // POST: Admin/CoverType/Create
+        // POST: Admin/Product/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name")] CoverType coverType)
+        public IActionResult Upsert(
+        [Bind("Id,Name")]
+        CoverType coverType)
         {
+            bool IsCreate = coverType.Id == 0;
+
             if (ModelState.IsValid)
             {
-                _unitOfWork.CoverTypeRepository.Add(coverType);
+
+                if (IsCreate)
+                {
+
+                    _unitOfWork.CoverTypeRepository.Add(coverType);
+
+                }
+                else
+                {
+
+                    _unitOfWork.CoverTypeRepository.Update(coverType);
+
+                }
+
                 _unitOfWork.Save();
-                return RedirectToAction(nameof(Index));
+
+                return RedirectToAction("Index");
             }
             return View(coverType);
         }
+
+       
+
+        
 
         // GET: Admin/CoverType/Edit/5
         public IActionResult Edit(int? id)

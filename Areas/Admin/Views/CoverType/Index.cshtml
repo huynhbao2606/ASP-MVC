@@ -14,7 +14,7 @@
             <h2 class="text-body-secondary">CoverType List</h2>
         </div>
         <div class="col-6 text-end py-1">
-            <a asp-controller="CoverType" asp-action="Create" role="button" class="btn btn-primary">
+            <a asp-controller="CoverType" asp-action="Upsert" role="button" class="btn btn-primary">
                 <i class="fa-solid fa-plus fa-beat"> &nbsp;</i> Create New CoverType
             </a>
         </div>
@@ -43,7 +43,7 @@
                 <td>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary"><i class="fa-solid fa-circle-info">&nbsp;</i></a>
 
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa-solid fa-pen-to-square">&nbsp;</i></a>
+                    <a asp-action="Upsert" asp-route-id="@item.Id" class="btn btn-warning"><i class="fa-solid fa-pen-to-square">&nbsp;</i></a>
 
                     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="fa-solid fa-trash">&nbsp;</i></a>
                 </td>
