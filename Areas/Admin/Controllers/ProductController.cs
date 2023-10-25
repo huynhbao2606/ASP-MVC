@@ -1,18 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ASP_MVC.Data;
 using ASP_MVC.Models;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using ASP_MVC.Dao.IRepository;
 using X.PagedList;
+using ASP_MVC.ViewModels;
 using ASP_MVC.Dao;
-using System.Collections;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace ASP_MVC.Areas.Admin.Controllers
 {
@@ -66,13 +64,44 @@ namespace ASP_MVC.Areas.Admin.Controllers
             return View(product);
         }
 
-        // GET: Admin/Product/Create
+        // GET: Admin/Product/Upsert
 
-        public IActionResult Create()
+        public IActionResult Upsert(int? id)
         {
-            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name");
-            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name");
-            return View();
+
+            ProductDTO productDTO = new ProductDTO();
+
+            productDTO.CategoryList = _unitOfWork.CategoryRepository.GetAll().Select(
+                i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                });
+
+            productDTO.CoverTypeList = _unitOfWork.CoverTypeRepository.GetAll().Select(
+                i => new SelectListItem
+                {
+                    Text = i.Name,
+                    Value = i.Id.ToString()
+                });
+
+            Product product;
+            if (id == null || id == 0)
+            {
+                product = new Product();
+            }
+            else
+            {
+                product = _unitOfWork.ProductRepository.GetEntityById((int)id);
+
+                if (product == null)
+                {
+                    return NotFound();
+                }
+            }
+
+            productDTO.Product = product;
+            return View(productDTO);
         }
 
         // POST: Admin/Product/Create
@@ -80,102 +109,81 @@ namespace ASP_MVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 
 
+        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Title,Description,ISBN,Author,Price,Price50,Price100,ImageUrl,CategoryId,CoverTypeId")] Product product, IFormFile file)
-         {
-            
+        public IActionResult Upsert(
+        [Bind("Id,Name,Author,ISBN,Price,Price50,Price100,Description,CategoryId,CoverTypeId")]
+        ProductDTO productDTO,
+        IFormFile? file)
+        {
+            bool IsCreate = productDTO.Product.Id == 0;
+
             if (ModelState.IsValid)
-            {
+             {
+                
                 var wwwRootPath = _webHostEnvironment.WebRootPath;
+
                 if (file != null)
                 {
+                    if(productDTO.Product.ImageUrl != null && productDTO.Product.ImageUrl != "")
+                    {
+
+                        var oldImagePath = Path.Combine(wwwRootPath, productDTO.Product.ImageUrl.TrimStart(Path.DirectorySeparatorChar));
+
+                        if (System.IO.File.Exists(oldImagePath))
+                        {
+                            System.IO.File.Delete(oldImagePath);
+                        }
+
+                    }
+
+
                     var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
                     var productPath = Path.Combine(wwwRootPath, "images/product");
 
                     using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
                     {
+
                         file.CopyTo(fileStream);
+
                     }
-                    product.ImageUrl = fileName;
+
+                    productDTO.Product.ImageUrl = fileName;
+
                 }
-                _unitOfWork.ProductRepository.Add(product);
+                if(IsCreate && file == null)
+                {
+                    TempData["uploadFileError"] = "require file";
+                }
+
+                if (IsCreate)
+                {
+         
+                    _unitOfWork.ProductRepository.Add(productDTO.Product);
+
+                }
+                else
+                {
+
+                    _unitOfWork.ProductRepository.Update(productDTO.Product);
+
+                }
                 _unitOfWork.Save();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
-            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name",product.CategoryId);
-            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name",product.CoverTypeId);
-            return View(product);
+             return View(productDTO);
         }
 
 
 
         // GET: Admin/Product/Edit/5
-        public IActionResult Edit(int? id)
-        {
-            if (id == null || _unitOfWork.ProductRepository.GetEntityById == null)
-            {
-                return NotFound();
-            }
-
-            var product = _unitOfWork.ProductRepository.GetEntityById(id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name", selectedValue: product.CategoryId);
-            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name", selectedValue: product.CoverTypeId);
-            return View(product);
-        }
-
+       
         // POST: Admin/Product/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Title,Description,ISBN,Author,Price,Price50,Price100,ImageUrl,CategoryId,CoverTypeId")] Product product, IFormFile file)
-        {
-            if (id != product.Id)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    var wwwRootPath = _webHostEnvironment.WebRootPath;
-                    if (file != null)
-                    {
-                        var fileName = Guid.NewGuid() + Path.GetExtension(file.FileName);
-                        var productPath = Path.Combine(wwwRootPath, "images/product");
-                        var oldImagePath = Path.Combine(productPath, product.ImageUrl);
-
-                        if (System.IO.File.Exists(oldImagePath) && product.ImageUrl != "default.jpg")
-                        {
-                            System.IO.File.Delete(oldImagePath);
-                        }
-
-                        using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
-                        {
-                            file.CopyTo(fileStream);
-                        }
-                        product.ImageUrl = fileName;
-                    }
-
-                    _unitOfWork.ProductRepository.Update(product);
-                    _unitOfWork.Save();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                        throw;
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["CategoryId"] = new SelectList(_unitOfWork.CategoryRepository.GetAll(), "Id", "Name", product.CategoryId);
-            ViewData["CoverTypeId"] = new SelectList(_unitOfWork.CoverTypeRepository.GetAll(), "Id", "Name", product.CoverTypeId);
-            return View(product);
-        }
+        
 
         // GET: Admin/Product/Delete/5
         public IActionResult Delete(int? id)
