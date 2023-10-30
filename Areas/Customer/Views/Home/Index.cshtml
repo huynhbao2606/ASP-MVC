@@ -27,6 +27,7 @@
                 <p class="fw-semibold mb-0 mt-auto text-success">@($"{product.Price,0:C0}")</p>
                 <p class="card-text">@product.Description</p>
                 <a asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary">Details</a>
+                <a asp-arena="Customer" asp-Controller="Basket" asp-action="AddToCart" asp-route-id="@product.Id" class="btn btn-primary">Add Cart</a>
         </div>
     </div>
     }

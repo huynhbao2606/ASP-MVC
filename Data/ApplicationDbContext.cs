@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ASP_MVC.Models;
 
-
 namespace ASP_MVC.Data
 {
     public class ApplicationDbContext : DbContext
