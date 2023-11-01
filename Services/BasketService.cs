@@ -18,8 +18,9 @@ namespace ASP_MVC.Services
 
         public void AddItem(int id, int quanlity)
         {
-            List<BasketItem> shoppingCartList;
-            if (_contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible) != default) {
+            /*List<BasketItem> shoppingCartList;
+            if (_contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible) != default)
+            {
 
                 shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible);
 
@@ -31,7 +32,8 @@ namespace ASP_MVC.Services
                         return x;
                     }).ToList();
 
-                }else
+                }
+                else
                 {
                     shoppingCartList.Add(new BasketItem
                     {
@@ -42,7 +44,8 @@ namespace ASP_MVC.Services
                     });
                 }
 
-            } else
+            }
+            else
             {
                 shoppingCartList = new List<BasketItem>
                 {
@@ -56,8 +59,25 @@ namespace ASP_MVC.Services
 
             _contextAccessor.HttpContext.Session.Set<List<BasketItem>>(ShoppingCartSessionVarible, shoppingCartList);
 
-         }
+        }*/
+            List<BasketItem> shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible) ?? new List<BasketItem>(); //Neu Khong Co Thi Tao Moi
 
+            var existingItem = shoppingCartList.FirstOrDefault(i => i.Product.Id == id);
+
+            if (existingItem != null)
+            {
+                existingItem.Count += quanlity;
+            }
+            else
+
+            {
+                shoppingCartList.Add(new BasketItem
+                {
+                    Count = quanlity,
+                    Product = _unitOfWork.ProductRepository.GetEntityById(id)
+                });
+            }
+        }
 
         public void RemoveItem(int id)
         {
