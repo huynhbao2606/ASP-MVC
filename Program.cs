@@ -2,6 +2,7 @@ using ASP_MVC.Dao;
 using ASP_MVC.Dao.IRepository;
 using ASP_MVC.Data;
 using ASP_MVC.Models;
+using ASP_MVC.Services;
 using Microsoft.EntityFrameworkCore;
 using System;
 using Microsoft.AspNetCore.Identity;
@@ -26,8 +27,22 @@ namespace ASP_MVC
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
-         
+            
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IBasketService, BasketService>();
+            builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+         
+
+            //Config session 
+
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.IsEssential = true;
+            });
+
+
 
             //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
@@ -42,12 +57,16 @@ namespace ASP_MVC
             }
 
             app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
                         app.UseAuthentication();;
 
+
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.MapControllerRoute(
             name: "default",
