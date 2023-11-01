@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ASP_MVC.Models;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace ASP_MVC.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

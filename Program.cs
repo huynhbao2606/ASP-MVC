@@ -4,6 +4,7 @@ using ASP_MVC.Data;
 using ASP_MVC.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using Microsoft.AspNetCore.Identity;
 
 namespace ASP_MVC
 {
@@ -20,6 +21,9 @@ namespace ASP_MVC
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                  builder.Configuration.GetConnectionString("Entity")
             ));
+
+                        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
          
@@ -41,6 +45,7 @@ namespace ASP_MVC
             app.UseStaticFiles();
 
             app.UseRouting();
+                        app.UseAuthentication();;
 
             app.UseAuthorization();
 
