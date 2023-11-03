@@ -23,7 +23,7 @@ namespace ASP_MVC
                  builder.Configuration.GetConnectionString("Entity")
             ));
 
-                        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
@@ -61,7 +61,8 @@ namespace ASP_MVC
             app.UseStaticFiles();
 
             app.UseRouting();
-                        app.UseAuthentication();;
+
+            app.UseAuthentication();;
 
 
             app.UseAuthorization();
@@ -73,7 +74,7 @@ namespace ASP_MVC
             pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
 
 
-            AppDbInitializer.Seed(app);
+          /*  AppDbInitializer.Seed(app);*/
 
             app.Run();
         }

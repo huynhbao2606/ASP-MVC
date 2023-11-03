@@ -33,7 +33,7 @@ namespace ASP_MVC.Areas.Customer.Controllers
             IEnumerable<Product> productList = _unitOfWork.ProductRepository.GetEntities(
                 filter: null,
                 orderBy: null,
-                includeProperties: "Category,CoverType,Vaccine"
+                includeProperties: "Category,CoverType"
             );
 
 

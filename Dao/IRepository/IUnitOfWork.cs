@@ -9,9 +9,6 @@ namespace ASP_MVC.Dao.IRepository
         IGenericRepository<Category> CategoryRepository { get; }
         IGenericRepository<CoverType> CoverTypeRepository { get; }
         IGenericRepository<Product> ProductRepository { get; }
-        IGenericRepository<Vaccine> VaccineRepository { get; }
-        IGenericRepository<Models.Type> TypeRepository { get; }
-        IGenericRepository<VaccinationSchedule> ScheduleRepository { get; }
 
     }
 }

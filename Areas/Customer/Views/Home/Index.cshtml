@@ -15,7 +15,7 @@
 @foreach (var product in Model)
     {
 <div class="card" style="width: 18rem;">
-    <img alt="@product.ImageUrl" src="@product.ImageUrl" class="card-img-top">
+    <img alt="~@product.ImageUrl" src="~@product.ImageUrl" class="card-img-top">
         <div class="card-body">
             <h5 class="card-title">@product.Title</h5>
                 <p class="mb-1 small text-muted">
@@ -31,28 +31,7 @@
         </div>
     </div>
     }
-</div>
-<div class="g-4 row row-cols-4 row-cols-md-5">
-    @foreach (var vaccine in Model)
-    {
-        <div class="card" style="width: 18rem;">
-            <img alt="@vaccine.ImageUrl" src="@vaccine.ImageUrl" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title">@vaccine.Title</h5>
-                <p class="mb-1 small text-muted">
-                    <i class="fa-solid fa-tag" style="min-width: 20px"></i> @vaccine.Vaccine.Name
-                </p>
-                <p class="small text-muted">
-                    <i class="fa-book-open-cover fa-solid" style="min-width: 20px"></i> @vaccine.CoverType.Name
-                </p>
-                <p class="fw-semibold mb-0 mt-auto text-success">@($"{vaccine.Price,0:C0}")</p>
-                <p class="card-text">@vaccine.Description</p>
-                <a asp-action="Details" asp-route-id="@vaccine.Id" class="btn btn-primary">Details</a>
-                <a asp-arena="Customer" asp-Controller="Basket" asp-action="AddToCart" asp-route-id="@vaccine.Id" class="btn btn-primary">Add Cart</a>
-            </div>
-        </div>
-    }
-</div>
+</div> 
 
 
 Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount

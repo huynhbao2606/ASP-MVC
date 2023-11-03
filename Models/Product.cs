@@ -39,11 +39,6 @@ namespace ASP_MVC.Models
         public int CoverTypeId { get; set; }
         [ForeignKey("CoverTypeId")]
         [ValidateNever]
-        public CoverType CoverType { get; set; }
-        public int VaccineId { get; set; }
-        [ForeignKey("VaccineId")]
-        [ValidateNever]
-        public Vaccine Vaccine { get; set; }
-        
+        public CoverType CoverType { get; set; } 
     }
 }

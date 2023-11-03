@@ -77,20 +77,6 @@ namespace ASP_MVC.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Types",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Types", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -197,30 +183,6 @@ namespace ASP_MVC.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Vaccines",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CountryOfManufacture = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ExpirationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false),
-                    TypeId = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Vaccines", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Vaccines_Types_TypeId",
-                        column: x => x.TypeId,
-                        principalTable: "Types",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -235,8 +197,7 @@ namespace ASP_MVC.Migrations
                     Price100 = table.Column<double>(type: "float", nullable: true),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
-                    CoverTypeId = table.Column<int>(type: "int", nullable: false),
-                    VaccineId = table.Column<int>(type: "int", nullable: false)
+                    CoverTypeId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -251,34 +212,6 @@ namespace ASP_MVC.Migrations
                         name: "FK_Products_CoverTypes_CoverTypeId",
                         column: x => x.CoverTypeId,
                         principalTable: "CoverTypes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Products_Vaccines_VaccineId",
-                        column: x => x.VaccineId,
-                        principalTable: "Vaccines",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "VaccinationSchedules",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    VaccinationDates = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    VaccineId = table.Column<int>(type: "int", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_VaccinationSchedules", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_VaccinationSchedules_Vaccines_VaccineId",
-                        column: x => x.VaccineId,
-                        principalTable: "Vaccines",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -331,21 +264,6 @@ namespace ASP_MVC.Migrations
                 name: "IX_Products_CoverTypeId",
                 table: "Products",
                 column: "CoverTypeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Products_VaccineId",
-                table: "Products",
-                column: "VaccineId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_VaccinationSchedules_VaccineId",
-                table: "VaccinationSchedules",
-                column: "VaccineId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Vaccines_TypeId",
-                table: "Vaccines",
-                column: "TypeId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -369,9 +287,6 @@ namespace ASP_MVC.Migrations
                 name: "Products");
 
             migrationBuilder.DropTable(
-                name: "VaccinationSchedules");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
@@ -382,12 +297,6 @@ namespace ASP_MVC.Migrations
 
             migrationBuilder.DropTable(
                 name: "CoverTypes");
-
-            migrationBuilder.DropTable(
-                name: "Vaccines");
-
-            migrationBuilder.DropTable(
-                name: "Types");
         }
     }
 }
