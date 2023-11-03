@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ASP_MVC.Data;
-using ASP_MVC.Models;
 using X.PagedList;
 using ASP_MVC.Dao.IRepository;
+using ASP_MVC.Models;
 
 namespace ASP_MVC.Controllers
 {
     [Area("Admin")]
     public class CategoryController : Controller
     {
-        // private readonly ICategoryRepository _categoryRepository;
 
 
         private readonly IUnitOfWork _unitOfWork;
@@ -72,7 +67,7 @@ namespace ASP_MVC.Controllers
         // POST: Category/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("Id,Name,DisplayOrder,CreatedDateTime")] Category category)
+        public IActionResult Create([Bind("Id,Name,DisplayOrder,CreatedDateTime")]Category category)
         {
             
             /// validate
@@ -132,7 +127,7 @@ namespace ASP_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Name,DisplayOrder,CreatedDateTime")] Category category)
+        public IActionResult Edit(int id, [Bind("Id,Name,DisplayOrder,CreatedDateTime")]Category category)
         {
             /// validate
             bool checkCategoryNameExist = _unitOfWork.CategoryRepository

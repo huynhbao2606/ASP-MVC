@@ -4,13 +4,13 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using ASP_MVC.Models;
 using ASP_MVC.Dao.IRepository;
 using X.PagedList;
 using ASP_MVC.ViewModels;
 using ASP_MVC.Dao;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using ASP_MVC.Models;
 
 namespace ASP_MVC.Areas.Admin.Controllers
 {

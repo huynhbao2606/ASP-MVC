@@ -1,6 +1,6 @@
-﻿using ASP_MVC.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using ASP_MVC.Models;
 
 namespace ASP_MVC.ViewModels
 {

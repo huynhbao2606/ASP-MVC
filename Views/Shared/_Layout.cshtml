@@ -23,18 +23,29 @@
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link" asp-area="Customer" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house">&nbsp;</i>Home</a>
+                        </li>   
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-lock">&nbsp</i> Admin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index"><i class="fa-solid fa-list">&nbsp;</i>Category</a>
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Product" asp-action="Index"><i class="fa-brands fa-product-hunt">&nbsp</i>Product</a>
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="CoverType" asp-action="Index"><i class="fa fa-ellipsis-v">&nbsp</i>CoverType</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-syringe">&nbsp</i>Vaccine
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Vaccine" asp-action="Index"><i class="fa-solid fa-syringe">&nbsp</i>Vaccine</a>
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Type" asp-action="Index"><i class="fa fa-ellipsis-v">&nbsp</i>Type</a>
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Schedule" asp-action="Index"><i class="fa-solid fa-calendar"></i>Vaccination Schedule</a>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index"><i class="fa-solid fa-list">&nbsp;</i>Category</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index"><i class="fa-solid fa-lock">&nbsp;</i>Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="CoverType" asp-action="Index"><i class="fa-solid fa-lock">&nbsp;</i>CoverType</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Customer" asp-controller="Basket" asp-action="Index"><i class="fa-solid fa-lock">&nbsp;</i>Shopping Cart</a>
+                            <a class="nav-link" asp-area="Customer" asp-controller="Basket" asp-action="Index"><i class="fa-solid fa-cart-shopping">&nbsp;</i>Cart</a>
                         </li>
 
                     </ul>

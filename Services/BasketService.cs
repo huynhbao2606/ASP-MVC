@@ -1,12 +1,12 @@
 ﻿using ASP_MVC.Dao.IRepository;
-using ASP_MVC.Models;
 using ASP_MVC.Helpers;
+using ASP_MVC.Models;
 
 namespace ASP_MVC.Services
 {
     public class BasketService : IBasketService
     {
-        const string ShoppingCartSessionVarible = "_ShoppingCartSessionVarible";
+        const string ShoppingCartSessionVariable = "_ShoppingCartSessionVariable";
         private readonly IUnitOfWork _unitOfWork;
         private readonly IHttpContextAccessor _contextAccessor;
 
@@ -16,13 +16,13 @@ namespace ASP_MVC.Services
             _contextAccessor = contextAccessor;
         }
 
-        public void AddItem(int id, int quanlity)
+        public void AddItem(int id, int quantity)
         {
             /*List<BasketItem> shoppingCartList;
-            if (_contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible) != default)
+            if (_contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVariable) != default)
             {
 
-                shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible);
+                shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVariable);
 
                 if (shoppingCartList.Where(i => i.Product.Id == id).Any())
                 {
@@ -57,37 +57,38 @@ namespace ASP_MVC.Services
                 };
             }
 
-            _contextAccessor.HttpContext.Session.Set<List<BasketItem>>(ShoppingCartSessionVarible, shoppingCartList);
+            _contextAccessor.HttpContext.Session.Set<List<BasketItem>>(ShoppingCartSessionVariable, shoppingCartList);
 
         }*/
-            List<BasketItem> shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible) ?? new List<BasketItem>(); //Neu Khong Co Thi Tao Moi
+            List<BasketItem> shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVariable) ?? new List<BasketItem>(); //Neu Khong Co Thi Tao Moi
 
             var existingItem = shoppingCartList.FirstOrDefault(i => i.Product.Id == id);
 
             if (existingItem != null)
             {
-                existingItem.Count += quanlity;
+                existingItem.Count += quantity;
+
             }
             else
-
             {
                 shoppingCartList.Add(new BasketItem
                 {
-                    Count = quanlity,
+                    Count = quantity,
                     Product = _unitOfWork.ProductRepository.GetEntityById(id)
                 });
             }
+            _contextAccessor.HttpContext.Session.Set<List<BasketItem>>(ShoppingCartSessionVariable, shoppingCartList);
         }
 
         public void RemoveItem(int id)
         {
-            if (_contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible) != default)
+            if (_contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVariable) != default)
             {
-                List<BasketItem> shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVarible);
+                List<BasketItem> shoppingCartList = _contextAccessor.HttpContext.Session.Get<List<BasketItem>>(ShoppingCartSessionVariable);
 
                 shoppingCartList.RemoveAll(i => i.Product.Id == id);
 
-                _contextAccessor.HttpContext.Session.Set<List<BasketItem>>(ShoppingCartSessionVarible, shoppingCartList);
+                _contextAccessor.HttpContext.Session.Set<List<BasketItem>>(ShoppingCartSessionVariable, shoppingCartList);
             }
 
 
@@ -95,7 +96,7 @@ namespace ASP_MVC.Services
         
         public void ClearBasket()
         {
-            _contextAccessor.HttpContext.Session.Remove(ShoppingCartSessionVarible);
+            _contextAccessor.HttpContext.Session.Remove(ShoppingCartSessionVariable);
         }
     }
 }

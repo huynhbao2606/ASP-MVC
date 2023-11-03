@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ASP_MVC.Data;
-using ASP_MVC.Models;
 using ASP_MVC.Dao.IRepository;
 using X.PagedList;
-using ASP_MVC.ViewModels;
+using ASP_MVC.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -144,7 +143,7 @@ namespace ASP_MVC.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("Id,Name")] CoverType coverType)
+        public IActionResult Edit(int id, [Bind("Id,Name")]CoverType coverType)
         {
             if (id != coverType.Id)
             {
