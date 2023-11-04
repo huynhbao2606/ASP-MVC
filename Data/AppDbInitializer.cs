@@ -73,12 +73,11 @@ namespace ASP_MVC.Data
                                 ImageUrl = "",
                                 Category = context.Categories.Where(c => c.Name == "Comic").FirstOrDefault(),
                                 CoverType = context.CoverTypes.Where(c => c.Name == "Soft cover").FirstOrDefault(),
-                                Vaccine = context.Vaccines.Where(c => c.Name == "COVID-19 Vaccine").FirstOrDefault(),
                             }
                         });
                         context.SaveChanges();
                     }
-                   
+                }
             }
         }
     }

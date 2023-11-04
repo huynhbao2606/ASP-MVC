@@ -23,10 +23,17 @@ namespace ASP_MVC
                  builder.Configuration.GetConnectionString("Entity")
             ));
 
-                        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.AddDefaultIdentity<IdentityUser>(options => {
+                    options.SignIn.RequireConfirmedAccount = false;
+                    options.Password.RequireNonAlphanumeric = false;
+                    options.Password.RequireDigit = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireUppercase = false;
+            }).AddEntityFrameworkStores<ApplicationDbContext>();
 
+           
 
+            builder.Services.AddRazorPages();
             
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddScoped<IBasketService, BasketService>();
@@ -61,8 +68,10 @@ namespace ASP_MVC
             app.UseStaticFiles();
 
             app.UseRouting();
-                        app.UseAuthentication();;
 
+            app.UseAuthentication();;
+
+            app.MapRazorPages();
 
             app.UseAuthorization();
 
