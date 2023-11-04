@@ -78,55 +78,7 @@ namespace ASP_MVC.Data
                         });
                         context.SaveChanges();
                     }
-                    if (!context.Vaccines.Any())
-                    {
-                        context.Vaccines.AddRange(new List<Vaccine>
-    {
-        new Vaccine
-        {
-            Name = "COVID-19 Vaccine",
-            CountryOfManufacture = "USA",
-            ExpirationDate = DateTime.Now.AddMonths(12),
-            Price = 29.99,
-            Type = new @Models.Type { Name = "Viral" }, 
-        }
-        // Add more vaccines as needed
-    });
-                        context.SaveChanges();
-                    }
-
-                    if (!context.Types.Any())
-                    {
-                        context.Types.AddRange(new List<@Models.Type>
-    {
-        new @Models.Type
-        {
-            Name = "Bacterial",
-        },
-        new @Models.Type
-        {
-            Name = "Viral",
-        }
-        // Add more types as needed
-    });
-                        context.SaveChanges();
-                    }
-
-                    if (!context.VaccinationSchedules.Any())
-                    {
-                        context.VaccinationSchedules.AddRange(new List<VaccinationSchedule>
-    {
-        new VaccinationSchedule
-        {
-            Name = "COVID-19 Vaccination Schedule",
-            VaccinationDates = "Monthly",
-            Vaccine = context.Vaccines.First(v => v.Name == "COVID-19 Vaccine"),
-        }
-        // Add more vaccination schedules as needed
-    });
-                        context.SaveChanges();
-                    }
-                }
+                   
             }
         }
     }
